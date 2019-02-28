@@ -10,20 +10,16 @@
     <div id="container">
         <?php view('não autenticado/menu'); ?>
         <hr>
-        <div class="center">
-            <p>Bem vindo(a) ao meu site.</p>
-            <img src="favicon.jpg" width="150" height="150">
-            <p>Meu nome é Anderson Ismael, sou progrador PHP.</p>
-        </div>
-        <b>Posts</b>
+        <h1>Projetos</h1>
         <ul>
             <li>
-                <a href="1.html">
-                    10 mil links no Hacker Brasil
-                </a>
+                <a href="http://hackerbrasil.com" target="_blank">hackerbrasil.com</a> -
+                Agregador de notícias em português sobre TI
             </li>
+            <!--<li><a href="http://pastecsv.com" target="_blank">pastecsv.com</a> -
+            Compartilhador de arquivos CSV</li>-->
         </ul>
-        <hr>
-        <?php view('não autenticado/menu'); ?>
-    </div>
+    <hr>
+    <?php view('não autenticado/menu'); ?>
+</div>
 </body>

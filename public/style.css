@@ -1,25 +1,25 @@
 /*RESET*/
 *{
-    color:#202020;
+    color:black;
     font-family:sans-serif;
 }
 
 /*TAGS*/
 a{
-    color:green;
-}
-a:hover{
     color:red;
 }
+a:hover{
+    color:black;
+}
 body{
-    background-color:green;
+    background-color:black;
 }
 hr{
     border:0;
-    border-bottom:1px solid green;
+    border-bottom:1px solid red;
 }
 img{
-    border:1px solid green;
+    border:1px solid red;
 }
 
 /*Classes*/

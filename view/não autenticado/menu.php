@@ -1,22 +1,29 @@
 <div class="center">
     <b>
-        <a href="/">
-            Principal
-        </a> /
-        <a href="/projetos">
-            Projetos
-        </a> /
-        <a href="http://fb.com/aicouto" target="_blank">
-            Facebook
-        </a> /
-        <a href="http://github.com/aicouto" target="_blank">
-            Github
-        </a> /
-        <a href="http://github.com/aicouto" target="_blank">
-            Twitter
-        </a> /
-        <a target="_blank" href="https://goo.gl/forms/mvOUqlValMF0Xzxw1">
-            Contato
-        </a>
+        <?php
+        $links=[
+            'Principal'=>'/',
+            'Projetos'=>'/projetos',
+            'Facebook'=>'http://fb.com/aicouto',
+            'Github'=>'http://github.com/aicouto',
+            'Twitter'=>'http://twitter.com/aicouto',
+            'Contato'=>'https://goo.gl/forms/mvOUqlValMF0Xzxw1'
+        ];
+        $total=count($links);
+        $i=1;
+        foreach ($links as $key => $value) {
+            $start=substr($value,0,4);
+            if($start=='http'){
+                $target=' target="_blank"';
+            }else{
+                $target='';
+            }
+            print '<a href="'.$value.'"'.$target.'>'.$key.'</a>';
+            if($i++<>$total){
+                print ' | ';
+            }
+
+        }
+        ?>
     </b>
 </div>

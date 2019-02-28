@@ -5,9 +5,11 @@ require '../basic/basic.php';
 inc([
     'e',
     'controller',
+    'error',
     'segment',
     'view'
 ]);
+error(true);
 $segmento=segment();
 $nome_do_controller=$segmento[1];
 if($nome_do_controller=='/'){

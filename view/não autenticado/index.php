@@ -11,7 +11,7 @@
         <?php view('não autenticado/menu'); ?>
         <hr>
         <div class="center">
-            <p>Bem vindo(a) ao meu site.</p>
+            <h1>Bem vindo(a)</h1>
             <img src="favicon.jpg" width="150" height="150">
             <p>Meu nome é Anderson Ismael, sou progrador PHP.</p>
         </div>

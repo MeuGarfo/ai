@@ -4,5 +4,12 @@
     "segment",
     "view",
     "auth",
-    "backup"
+    "backup",
+    "db",
+    "e",
+    "error",
+    "method",
+    "migrate",
+    "model",
+    "redirect"
 ]

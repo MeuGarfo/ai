@@ -3,6 +3,7 @@
 //28 de fevereiro de 2019
 require '../basic/basic.php';
 inc([
-    'controller'
+    'controller',
+    'segment'
 ]);
 controller('index');

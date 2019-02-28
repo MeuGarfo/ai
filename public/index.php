@@ -4,6 +4,17 @@
 require '../basic/basic.php';
 inc([
     'controller',
-    'segment'
+    'segment',
+    'view'
 ]);
-controller('index');
+$segmento=segment();
+$nome_do_controller=$segmento[1];
+if($nome_do_controller=='/'){
+    $nome_do_controller='index';
+}
+$arquivo_do_controller=ROOT.'controller/'.$nome_do_controller.'.php';
+if(file_exists($arquivo_do_controller)){
+    controller($nome_do_controller);
+}else{
+    controller('not_found');
+}

@@ -3,5 +3,6 @@
     "controller",
     "segment",
     "view",
-    "auth"
+    "auth",
+    "backup"
 ]

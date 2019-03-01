@@ -2,21 +2,9 @@
 require './basic/basic.php';
 inc([
     'auth',
-    'db'
+    'db',
+    'read'
 ]);
-
-function read ($prompt = '') {
-    if ( function_exists('readline') ) {
-        $line = trim(readline($prompt));
-        if (!empty($line)) {
-            readline_add_history($line);
-        }
-    } else {
-        echo $prompt;
-        $line = trim(fgets(STDIN));
-    }
-    return $line;
-}
 
 system('clear');
 $name=read('Digite o nome do administrador: ');
@@ -39,6 +27,7 @@ $where=[
 $usuarioExiste=$db->get("users","*",$where);
 if($usuarioExiste){
     print 'O super usuário '.$user['name'].' já está cadastrado'.PHP_EOL;
+    var_dump($user);
 }else{
     $result=$auth->signup($user);
     if($result){

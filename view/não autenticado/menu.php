@@ -3,9 +3,9 @@
     $links=[
         'Blog'=>'/',
         'Projetos'=>'/projetos',
-        'Facebook'=>'http://fb.com/aicouto',
-        'Github'=>'http://github.com/aicouto',
-        'Twitter'=>'http://twitter.com/aicouto',
+        'Facebook'=>'https://facebook.com/aicouto',
+        'Github'=>'https://github.com/aicouto',
+        'Twitter'=>'https://twitter.com/aicouto',
         'Contato'=>'https://goo.gl/forms/mvOUqlValMF0Xzxw1'
     ];
     $total=count($links);

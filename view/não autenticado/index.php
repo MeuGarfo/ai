@@ -8,14 +8,12 @@
 </head>
 <body>
     <div id="container">
+        <h1 class="center">
+            Anderson Ismael
+        </h1>
         <?php view('não autenticado/menu'); ?>
         <hr>
-        <div class="center">
-            <h1>Bem vindo(a)</h1>
-            <img src="favicon.jpg" width="150" height="150">
-            <p>Meu nome é Anderson Ismael, sou progrador PHP.</p>
-        </div>
-        <b>Posts</b>
+        <h2>Blog</h2>
         <ul>
             <li>
                 <a href="1.html">

@@ -8,9 +8,12 @@
 </head>
 <body>
     <div id="container">
+        <h1 class="center">
+            Anderson Ismael
+        </h1>
         <?php view('não autenticado/menu'); ?>
         <hr>
-        <h1>Projetos</h1>
+        <h2>Projetos</h2>
         <ul>
             <li>
                 <a href="http://hackerbrasil.com" target="_blank">hackerbrasil.com</a> -

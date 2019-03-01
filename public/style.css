@@ -5,21 +5,28 @@
 }
 
 /*TAGS*/
+a{
+    font-weight: bold;
+}
 a,b,h1,h2{
-    color:red;
+    color:CornflowerBlue ;
 }
 a:hover{
     color:black;
 }
 body{
-    background-color:red;
+    background-color:CornflowerBlue;
+    background: linear-gradient(to bottom, white ,CornflowerBlue);
+    background-attachment: fixed;
+    color:#333333;
+    margin-top: 0;
+}
+body,html{
+    height:100%;
 }
 hr{
     border:0;
     border-bottom:1px solid black;
-}
-img{
-    border:1px solid black;
 }
 
 /*Classes*/
@@ -31,6 +38,6 @@ img{
 #container{
     background-color:white;
     margin:0 auto;
-    max-width:800px;
+    max-width:600px;
     padding:1em;
 }

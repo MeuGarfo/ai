@@ -12,7 +12,6 @@
             Anderson Ismael
         </h1>
         <?php view('não autenticado/menu'); ?>
-        <hr>
         <h2>Blog</h2>
         <ul>
             <li>
@@ -21,7 +20,6 @@
                 </a>
             </li>
         </ul>
-        <hr>
         <?php view('não autenticado/menu'); ?>
     </div>
 </body>

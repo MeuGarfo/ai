@@ -1,4 +1,4 @@
-<div class="center">
+<div class="center menu">
     <?php
     $links=[
         'Blog'=>'/',
@@ -19,7 +19,7 @@
         }
         print '<a href="'.$value.'"'.$target.'>'.$key.'</a>';
         if($i++<>$total){
-            print ' | ';
+            print ' - ';
         }
 
     }

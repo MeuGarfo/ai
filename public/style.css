@@ -2,42 +2,55 @@
 *{
     color:black;
     font-family:sans-serif;
+    line-height: 1.5em;
 }
 
 /*TAGS*/
 a{
-    font-weight: bold;
-}
-a,b,h1,h2{
-    color:CornflowerBlue ;
+    color:blue ;
 }
 a:hover{
-    color:black;
+    color:red;
 }
 body{
-    background-color:CornflowerBlue;
-    background: linear-gradient(to bottom, white ,CornflowerBlue);
-    background-attachment: fixed;
+    background-color: black;
     color:#333333;
-    margin-top: 0;
+    margin: 0;
 }
 body,html{
     height:100%;
 }
+h1,h2{
+    font-family: serif;
+    font-weight: bold;
+}
 hr{
     border:0;
-    border-bottom:1px solid black;
+    border-bottom:1px solid DodgerBlue ;
 }
 
 /*Classes*/
 .center{
     text-align: center;
 }
+.menu{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    padding:1em;
+    text-transform: uppercase;
+}
+.menu a{
+    color:white;
+}
+.menu a:hover{
+    text-decoration: none;
+}
 
 /*IDs*/
 #container{
     background-color:white;
     margin:0 auto;
-    max-width:600px;
-    padding:1em;
+    max-width:800px;
+    padding:1em 1em 4em 1em;
 }

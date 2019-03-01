@@ -12,7 +12,6 @@
             Anderson Ismael
         </h1>
         <?php view('não autenticado/menu'); ?>
-        <hr>
         <h2>Projetos</h2>
         <ul>
             <li>
@@ -22,7 +21,6 @@
             <!--<li><a href="http://pastecsv.com" target="_blank">pastecsv.com</a> -
             Compartilhador de arquivos CSV</li>-->
         </ul>
-    <hr>
     <?php view('não autenticado/menu'); ?>
 </div>
 </body>

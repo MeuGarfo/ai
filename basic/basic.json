@@ -11,5 +11,6 @@
     "method",
     "migrate",
     "model",
-    "redirect"
+    "redirect",
+    "read"
 ]

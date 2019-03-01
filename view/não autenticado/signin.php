@@ -10,12 +10,12 @@
     <div id="container">
         <?php view('não autenticado/topo'); ?>
         <h2><?php e($title); ?></h2>
-        <ul>
-            <li>
-                <a href="1.html">
-                    10 mil links no Hacker Brasil
-                </a>
-            </li>
-        </ul>
+        <form class="" action="/signin" method="post">
+            Email<br>
+            <input type="text" name="email" value=""><br>
+            Senha<br>
+            <input type="password" name="password" value=""><br>
+            <button type="submit"><?php e($title); ?></button>
+        </form>
     </div>
 </body>

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <todo version="0.1.20">
-    <note priority="veryhigh" time="1551466450">
+    <note priority="veryhigh" time="1551466450" done="1551468183">
         migrar a tabela usuários
     </note>
     <note priority="high" time="1551446288">

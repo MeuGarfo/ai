@@ -2,26 +2,36 @@
 require './basic/basic.php';
 inc([
     'auth',
-    'db',
-    'read'
+    'db'
 ]);
+
+function read ($prompt = '') {
+    if ( function_exists('readline') ) {
+        $line = trim(readline($prompt));
+        if (!empty($line)) {
+            readline_add_history($line);
+        }
+    } else {
+        echo $prompt;
+        $line = trim(fgets(STDIN));
+    }
+    return $line;
+}
+
 system('clear');
-echo 'Digite o nome do administrador:'.PHP_EOL;
-$nome=read();
+$name=read('Digite o nome do administrador: ');
 system('clear');
-echo 'Digite o email do administrador:'.PHP_EOL;
-$email=read();
+$email=read('Digite o email do administrador: ');
 system('clear');
-echo 'Digite a senha do administrador:'.PHP_EOL;
-$senha=read();
+$password=read('Digite a senha do administrador: ');
 system('clear');
 $db=db();
 $auth=auth($db);
 $user=[
     'type'=>'admin',
-    'name'=>$_ENV['ADMIN_NAME'],
-    'email'=>$_ENV['ADMIN_EMAIL'],
-    'password'=>$_ENV['ADMIN_PASSWORD']
+    'name'=>$name,
+    'email'=>$email,
+    'password'=>$password
 ];
 $where=[
     'email'=>$user['email']

@@ -9,7 +9,7 @@
 <body>
     <div id="container">
         <?php view('não autenticado/topo'); ?>
-        <h2>Blog</h2>
+        <h2><?php e($title); ?></h2>
         <ul>
             <li>
                 <a href="1.html">

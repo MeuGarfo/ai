@@ -8,11 +8,8 @@
 </head>
 <body>
     <div id="container">
-        <h1 class="center">
-            Anderson Ismael
-        </h1>
-        <?php view('não autenticado/menu'); ?>
-        <h2>Projetos</h2>
+        <?php view('não autenticado/topo'); ?>
+        <h2><?php e($title); ?></h2>
         <ul>
             <li>
                 <a href="http://hackerbrasil.com" target="_blank">hackerbrasil.com</a> -
@@ -21,6 +18,5 @@
             <!--<li><a href="http://pastecsv.com" target="_blank">pastecsv.com</a> -
             Compartilhador de arquivos CSV</li>-->
         </ul>
-    <?php view('não autenticado/menu'); ?>
 </div>
 </body>
